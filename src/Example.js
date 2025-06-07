@@ -44,7 +44,7 @@ export default function GradeCalculator() {
         <div style={{ textAlign: 'center', marginTop: '40px' }}>
             
             <h2>Grade Calculator</h2>
-            <p>Grades: 
+            <p>Quizzes: 
             <input
                 type="number"
                 placeholder="Quiz Score"
