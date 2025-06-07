@@ -42,26 +42,33 @@ export default function GradeCalculator() {
 
     return (
         <div style={{ textAlign: 'center', marginTop: '40px' }}>
+            
             <h2>Grade Calculator</h2>
+            <p>Grades: 
             <input
                 type="number"
                 placeholder="Quiz Score"
                 value={quiz}
                 onChange={(e) => setQuiz(e.target.value)}
             /><br /><br />
+            </p>
+            <p>Lab Activities:
             <input
                 type="number"
                 placeholder="Lab Activity Score"
                 value={lab}
                 onChange={(e) => setLab(e.target.value)}
             /><br /><br />
+            </p>
+            <p>Final Exam :
             <input
                 type="number"
                 placeholder="Final Exam Score"
                 value={exam}
                 onChange={(e) => setExam(e.target.value)}
             /><br /><br />
-            <button onClick={calculateGrade}>Calculate Grade</button>
+            </p>
+            <button onClick={calculateGrade}>Submit</button>
 
             {overallGrade !== null && (
                 <div style={{ marginTop: '20px' }}>
